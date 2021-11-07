@@ -1,0 +1,30 @@
+
+project:
+  project_name: N - LG TOM POC
+  project_id: "917727878528"
+  policies:
+    - name: requireOsLogin
+      policyConstraint: "constraints/compute.requireOsLogin"
+      enforce: true
+    - name: requireShieldedVm
+      policyConstraint: "constraints/compute.requireShieldedVm"
+      enforce: false
+    - name: disableSerialPortAccess
+      policyConstraint: "constraints/compute.disableSerialPortAccess"
+      enforce: true
+  list_policies:
+    - name: vmExternalIpAccess
+      policyConstraint: "constraints/compute.vmExternalIpAccess"
+      inherit_from_parent: false
+      suggested_value: "null"
+      status: false
+      values: [] 
+    - name: resourceLocations
+      policyConstraint: "constraints/gcp.resourceLocations"
+      inherit_from_parent: false
+      suggested_value: "null"
+      status: true
+      values: 
+      - "europe"
+      - "in:europe-west1-locations"
+      - "in:europe-west2-locations"

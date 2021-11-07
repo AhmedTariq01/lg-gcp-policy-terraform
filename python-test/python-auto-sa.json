@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "lofty-generator-312118",
+  "private_key_id": "fd557e8f4bab3e331e447d15bb79795fc7a7dbc8",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvAIBADANBgkqhkiG9w0BAQEFAASCBKYwggSiAgEAAoIBAQCRo2xhVoNNO3dm\nMPoPzxwuXKKtkOpP+Sb6EtzbHXFRumJsQwKVP/OoMIz1Mr/D0lARljCoLKZrds3S\n/hsLpKfZFOB9w3uxDist6OVuiefGQV37p48dcz7j8D5aB/bJ3w+9ugwlmusE7Bx+\nbibvAtxG6oQyBlPqNv+2fyfNjdi4W62PaTY9y4BwBZ20ziFMLEfXv9IMFZQBuSXY\nwPnCqQbVGGFjCPyOgqS18ncDp8bEusBNjMWbG01h2cqKD8eZ9dxojNxpn7w2UUhj\ngBOL3xJqrZibL5/G+d6NM776B9lOSuQ4d41DKf58aUWIsXVsgECgfKCn0kN69TkH\nNwX+48udAgMBAAECggEAMz8zQukjWMjlEdOIGooBW5sDL1n/6VY9zd9XUc8BcgXI\n3lmSDhyry3ISF7Hc4rYdsKKNyo+zm7r5YBZERAuTeIKtH/PqkXnv3b7HBOeH5C5a\nONRUOsOzzJdcCWgmAhD4xAU0gwMJUfkXabGvB4mVI2sgS04ItzDVOE10HxObv/sS\nbUQyBpaI1XEzx7LDAI8BgQJnqa0qzgt+OD6XnYWUxV8WdVqwYJjbJnSO4MMSCikj\nxn3Ulv52QxWpBdDBkf091kNnj8ZV81YeAqnfR5a2L32/r1FqxlU5JjQwdx0wBr6Z\nkLk8ZkWiRIBoyfI4EsCRmKc8gWuRKYBXZCNhS3G4bQKBgQDM7QlY0LlZkDu/P48n\niqWJuKLjIbKRzw0+Em+zHbjdkyW0RZQkLxo7ZipJgPU9GlWohe1PGUekiaSIcqcG\noOp7Zj5gJkHYyIXLOTZmqFmKH5Yh75dAlrE6OkGpew2cbL28+j05UfiVrelVneEp\ncpvqc2UhIMNyhwfJntbDEbvvgwKBgQC176Q+avdzBCH/TpNB9uCrzgKa+A3QcODP\nTMZZPLhGiA1jGY7vfi1eNQr615Co49+0PcOYguzbIEEc4wD9ELmWuJq6nY1nWHrv\nr3qTav+LwSx0HcdlBPe7hTUJqLLpkaDdft8Cf+gxPqJsu5y10w20xr4T8Mht8TxG\nj9TciGROXwKBgF0/56bwo8crqORoCb5WiulWiViNtvI+o6oBPa7l8X9yPBACMV0d\nyfQJk2iLNA0v9JaRCuGZgU5QC/zDH1oW01x/tBaQkhoRdUB6slSYetYtdWXP3qXX\nbKIwbDyw8AqkONrLjByPPmzuDGWXSCRSMLzI8dXXUNjGtTZ7/wIZCcn9AoGAcjjO\nm+VaD1qj4X66Uuqk6RgAaLydJ6UGbv9bc8D8TEO0a+gq5c8IuqGAkDVv+6h81NMG\nDqT8ASKB3pniD/9FFQw3EDxD/4L8Q6iewxik8V/JAemEOrbgtVkPEE5abOth3E1/\nwzj8VJZnMO6klz621y0DPs+ndebDGeXJFN+IYe8CgYASAetAvyclT/BuwV7MhJHM\nF7IcioAMiRe1FRmARq1+J9mhcq1oLQWVJD2JPcQgZtTxclKknhpwDpEYeA6BvEyH\nTi7YeQA4T7Vsu4I0w2DA32JI8m/2L58KJQ2WLNqNaGWqxnQKVG8pVMeLIoN5wRWh\nN0x6Pllxn/VN3YeBU86MMw==\n-----END PRIVATE KEY-----\n",
+  "client_email": "python-auto-sa@lofty-generator-312118.iam.gserviceaccount.com",
+  "client_id": "100445869568433399052",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/python-auto-sa%40lofty-generator-312118.iam.gserviceaccount.com"
+}
