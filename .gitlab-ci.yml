@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 image:
   name: registry.gitlab.com/adeel.royy/lg-gcp-policy-terraform:v1.0.0
   entrypoint:
@@ -60,3 +61,67 @@ deploy-prod:
     - main
 
 
+=======
+image:
+  name: registry.gitlab.com/adeel.royy/lg-gcp-policy-terraform:v1.0.0
+  entrypoint:
+    - '/usr/bin/env'
+    - 'PATH=/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin'
+
+variables:
+  PLAN: plan.terraformkey1
+  JSON_PLAN_FILE: terraformkey1.json
+
+.install-curl-jq: &install-curl-jq
+  - apt-get install curl jq
+  - shopt -s expand_aliases
+  - alias convert_report="jq -r '([.resource_changes[]?.change.actions?]|flatten)|{\"create\":(map(select(.==\"create\"))|length),\"update\":(map(select(.==\"update\"))|length),\"delete\":(map(select(.==\"delete\"))|length)}'"
+  - pip install --upgrade google-cloud-storage
+  - pip install requests
+  - pip install google-cloud-compute
+  - pip install google-api-python-client
+  - pip install --upgrade oauth2client 
+
+.gitlab-tf-backend: &gitlab-tf-backend
+  - curl www.google.com
+  - terraform --version
+  - terraform init -reconfigure
+  
+stages:
+  - iac_validate
+  - iac_plan
+  - iac_apply
+
+validate:
+  stage: iac_validate
+  script:
+    - *install-curl-jq
+    - *gitlab-tf-backend
+    - terraform validate
+    - terraform fmt -check
+    - cd python-test
+    - python script.py
+    
+    
+build-job:
+  stage: iac_plan
+  script:
+    - *install-curl-jq
+    - *gitlab-tf-backend
+    - terraform plan -out=$PLAN
+    - terraform show --json $PLAN | convert_report > $JSON_PLAN_FILE
+    # - terraform apply "plan.terraformkey1"    
+  only:
+      - main
+
+deploy-prod:
+  stage: iac_apply
+  script:
+    - cd python-test
+    - python compute_engine_api.py
+    - echo "This job deploys something from the $CI_COMMIT_BRANCH branch."
+  only:
+    - main
+
+
+>>>>>>> 0b644181e70c4a816bdc823b7d9ea0cd38037175
